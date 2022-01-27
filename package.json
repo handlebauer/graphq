@@ -1,5 +1,5 @@
 {
-  "name": "objq",
+  "name": "graphq",
   "version": "0.1.0",
   "type": "module",
   "description": "Parse native JavaScript objects into GraphQL queries",
