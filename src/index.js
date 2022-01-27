@@ -41,5 +41,28 @@ const parseOps = ops =>
     })
     .join(' ')
 
+/**
+ * @typedef Operation
+ * @property {string} name
+ * @property {Object<string, any>} [args]
+ * @property {Object<string, any>} fields
+ */
+
+/**
+ * @summary Parse a JavaScript object describing a GraphQL into a usable query
+ * @param {(Operation|Operation[])} ops
+ * @example
+ * import { objq } from 'objql'
+ *
+ * const query = objq({
+ *    name: 'transactions',
+ *    args: { first: 5, sort: ['HEIGHT_ASC'] },
+ *    fields: {
+ *       edges: { node: { id: true } },
+ *    },
+ * })
+ * @public
+ * @returns {string} GrahpQL query
+ */
 export const objq = ops =>
   `query { ${parseOps(Array.isArray(ops) === true ? ops : [ops])} }`
