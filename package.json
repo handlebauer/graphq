@@ -13,7 +13,7 @@
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/handlebauer/objq.git",
+  "repository": "https://github.com/handlebauer/graphq.git",
   "author": "Donald Geddes <hi@donaldgeddes.ca>",
   "license": "MIT",
   "scripts": {
