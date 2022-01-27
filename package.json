@@ -1,6 +1,6 @@
 {
   "name": "@hbauer/graphq",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "type": "module",
   "description": "Parse native JavaScript objects into GraphQL queries",
   "main": "./lib/index.cjs",
