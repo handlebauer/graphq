@@ -7,6 +7,9 @@
   "repository": "https://github.com/handlebauer/objq.git",
   "author": "Donald Geddes <hi@donaldgeddes.ca>",
   "license": "MIT",
+  "scripts": {
+    "build:types": "jsdoc -t node_modules/tsd-jsdoc/dist -r src -d ./lib"
+  },
   "prettier": "@hbauer/prettier-config",
   "eslintConfig": {
     "extends": "@hbauer/eslint-config"
