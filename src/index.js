@@ -49,8 +49,8 @@ const parseOps = ops =>
  */
 
 /**
- * @summary Parse a JavaScript object describing a GraphQL into a usable query
  * @param {(Operation|Operation[])} ops
+ * @returns {string} A GraphQL query ready to go!
  * @example
  * import { objq } from 'objql'
  *
@@ -61,8 +61,8 @@ const parseOps = ops =>
  *       edges: { node: { id: true } },
  *    },
  * })
- * @public
- * @returns {string} GrahpQL query
  */
-export const objq = ops =>
+const objq = ops =>
   `query { ${parseOps(Array.isArray(ops) === true ? ops : [ops])} }`
+
+export { objq }
