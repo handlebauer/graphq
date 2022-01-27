@@ -52,9 +52,9 @@ const parseOps = ops =>
  * @param {(Operation|Operation[])} ops
  * @returns {string} A GraphQL query ready to go!
  * @example
- * import { objq } from 'objql'
+ * import { graphq } from 'graphq'
  *
- * const query = objq({
+ * const query = graphq({
  *    name: 'transactions',
  *    args: { first: 5, sort: ['HEIGHT_ASC'] },
  *    fields: {
@@ -62,7 +62,7 @@ const parseOps = ops =>
  *    },
  * })
  */
-const objq = ops =>
+const graphq = ops =>
   `query { ${parseOps(Array.isArray(ops) === true ? ops : [ops])} }`
 
-export { objq }
+export { graphq }
