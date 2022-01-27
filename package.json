@@ -3,13 +3,24 @@
   "version": "0.0.8",
   "type": "module",
   "description": "Parse native JavaScript objects into GraphQL queries",
-  "main": "src/index.js",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
   "types": "./lib/types.d.ts",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
   "repository": "https://github.com/handlebauer/objq.git",
   "author": "Donald Geddes <hi@donaldgeddes.ca>",
   "license": "MIT",
   "scripts": {
-    "build:types": "jsdoc -t node_modules/tsd-jsdoc/dist -r src -d ./lib"
+    "build:library": "rollup -c",
+    "build:types": "jsdoc -t node_modules/tsd-jsdoc/dist -r src -d ./lib",
+    "build": "npm run build:library && npm run build:types",
+    "prepublishOnly": "npm run build"
   },
   "prettier": "@hbauer/prettier-config",
   "eslintConfig": {
