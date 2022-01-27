@@ -1,5 +1,5 @@
 {
-  "name": "graphq",
+  "name": "@hbauer/graphq",
   "version": "0.2.1",
   "type": "module",
   "description": "Parse native JavaScript objects into GraphQL queries",
