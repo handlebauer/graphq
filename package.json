@@ -1,6 +1,6 @@
 {
   "name": "objq",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parse native JavaScript objects into GraphQL queries",
   "main": "src/index.js",
   "repository": "https://github.com/handlebauer/objq.git",
