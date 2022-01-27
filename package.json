@@ -4,6 +4,7 @@
   "type": "module",
   "description": "Parse native JavaScript objects into GraphQL queries",
   "main": "src/index.js",
+  "types": "./lib/types.d.ts",
   "repository": "https://github.com/handlebauer/objq.git",
   "author": "Donald Geddes <hi@donaldgeddes.ca>",
   "license": "MIT",
